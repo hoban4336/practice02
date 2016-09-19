@@ -11,8 +11,19 @@ public class ArrayParameter {
 	}
 
 	static void replaceSpace( char a[] ) {
+		int count =0;
+		for(char tmp : a){
+			if(tmp==32){
+				a[count] =',';
+			}
+			count++;
+		}
 	}
 
 	static void printCharArray( char a[] ) {
+		for(char tmp:a){
+			System.out.print(tmp);
+		}
+		System.out.println("");
 	}
 }
